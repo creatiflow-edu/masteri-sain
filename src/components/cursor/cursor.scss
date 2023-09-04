@@ -1,0 +1,12 @@
+@import "../../styles/core/variables";
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: $white-cl;
+  background: $gold-cl;
+}
+
+::selection {
+  color: $white-cl;
+  background: $gold-cl;
+}

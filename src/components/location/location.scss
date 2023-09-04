@@ -1,0 +1,112 @@
+@import "../../styles/core/variables";
+
+#location {
+  position: relative;
+  padding-top: 20.4rem;
+  padding-bottom: 76rem;
+  background-color: #f5f5f5;
+
+  .location-top {
+    margin-bottom: 15.8rem;
+
+    p {
+      vertical-align: text-top;
+      margin-top: 1.8rem;
+    }
+
+    &__title {
+      h3 {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 6.4rem;
+        line-height: 7.2rem;
+
+        span {
+          font-weight: 400;
+          font-size: 7.6rem;
+          line-height: 8.2rem;
+        }
+      }
+    }
+  }
+
+  .location-bottom {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .list {
+        &__item {
+          &:nth-child(3) {
+            .item__headline {
+              font-size: 3.17rem;
+            }
+          }
+          .item {
+            &__index {
+              font-weight: 500;
+              font-size: 3.2rem;
+              line-height: 4.2rem;
+            }
+
+            &__headline {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .content {
+        &__text {
+          &__title {
+            margin-bottom: 5.9rem;
+          }
+
+          &__desc {
+            text-align: justify;
+          }
+        }
+
+        &__img {
+          width: 32rem;
+          height: 36.7rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .call-to-action-button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 40rem;
+    left: 50%;
+    bottom: 20rem;
+    transform: translateX(-50%);
+
+    .circle {
+      border-radius: 50%;
+      background-color: $white-cl;
+      width: 40rem;
+      height: 40rem;
+    }
+
+    p {
+      position: absolute;
+      color: $gold-cl;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "vite-creatflow",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^4.0.3",
+    "@types/node": "^18.15.11",
+    "@types/three": "^0.152.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "sass": "^1.60.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vite-plugin-handlebars": "^1.6.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "gsap": "^3.12.2",
+    "postcss-import": "^15.1.0",
+    "split-type": "^0.3.3",
+    "swiper": "^10.0.4",
+    "three": "^0.152.2",
+    "vite-plugin-sass": "^0.1.0"
+  }
+}

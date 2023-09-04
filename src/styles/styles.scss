@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "../components/components";
+
+@import "./core/reset";
+@import "./core/variables";
+@import "./core/mixins";
+@import "./core/layouts";
+@import "./core/components";
+
+@import "./core/nav";

@@ -1,0 +1,127 @@
+@import "../../styles/core/variables";
+
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.about {
+  overflow: hidden;
+}
+
+.slides-container {
+  // position: relative;
+  // overflow: hidden;
+  display: flex;
+  // flex: 1;
+  // width: 100vw;
+  // height: 100vh;
+
+  .part {
+    display: flex;
+    .section {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      // overflow: hidden;
+    }
+  }
+
+  .slider-item {
+    &__img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      left: 0;
+    }
+
+  }
+  .box {
+    &_head {
+      margin-bottom: 4.2rem;
+
+      h2 {
+        font-size: 10.4rem;
+        line-height: 11rem;
+        color: #fff;
+        grid-area: content;
+      }
+    }
+
+    &__ttl {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    &__content {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      color: #fff;
+    }
+
+    &__number {
+      position: absolute;
+      width: 46px;
+      height: 53px;
+      left: 320px;
+      top: 673px;
+    }
+
+    .slider-pages {
+      position: absolute;
+      bottom: 8rem;
+      left: calc(var(--gap) * 12);
+      display: flex;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #fff;
+      pointer-events: none;
+      z-index: 20;
+
+      .pages {
+        &--current {
+          margin-right: 3rem;
+        }
+
+        &--total {
+          color: $gray2-cl;
+        }
+      }
+    }
+  }
+
+  .call-to-action-button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 33rem;
+    height: 33rem;
+    right: 15.8rem;
+    bottom: 8rem;
+
+    .circle {
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 31.9rem;
+      height: 31.9rem;
+    }
+
+    p {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}

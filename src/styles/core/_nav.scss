@@ -1,0 +1,28 @@
+// css navigator (Menu)
+nav {
+  @include size(100vw, 100vh);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 98;
+  background-color: $white-cl;
+  @include flex(center, center);
+  flex-direction: column;
+  @include transition($t);
+  @include transform(translateX(200%));
+
+  a {
+    @include text(1.6rem, vsb, 2rem, $gray-cl, uppercase);
+    letter-spacing: 0.3rem;
+    margin-bottom: 30px;
+    overflow: hidden;
+    opacity: 1;
+    cursor: none;
+  }
+
+  &.active {
+    @include transform(translateX(0%));
+  }
+}

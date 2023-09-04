@@ -1,0 +1,150 @@
+@use "sass:math" as math;
+@function rem($px, $base: 10px) {
+  @return math.div($px, $base) * 1rem;
+}
+
+//======================================================BOXED LAYOUT=======================================================
+
+$container-max-width: 100%;
+$container-width: 192rem; // tùy thuộc vào container của bản thiết kế // $container-width = container (đo từ bản thiết kế) + 30px
+
+/*GRID - media queries breakpoints*/
+$xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
+$xs-min: 768px; // KHÔNG THAY ĐỔI
+$sm-min: 992px; // KHÔNG THAY ĐỔI
+$md-min: 1200px; // KHÔNG THAY ĐỔI
+$lg-min: 1600px; // CÓ THỂ TÙY CHỈNH
+
+$xxs-max: ($xxs-min - 1); // Small Mobile
+$xs-max: ($xs-min - 1); // Mobile
+$sm-max: ($sm-min - 1); // Tablet
+$md-max: ($md-min - 1); // Desktop
+$lg-max: ($lg-min - 1); // Large Desktop
+
+//=====================================CÁC BIẾN KHÔNG THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE======================================
+// colors - tuỳ chỉnh
+
+$dark-cl: #555759;
+$gold-cl: #c79358;
+$white-cl: #ffffff;
+$gray-cl: #363636;
+$gray1-cl: #7d7d7d;
+$gray2-cl: #b0b0b0;
+$gray3-cl: #b6ada5;
+
+// timing transition - tuỳ chỉnh
+$t: 0.4s;
+$cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
+
+// ========================================CÁC BIẾN CÓ THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE=====================================
+
+:root {
+  //=========== VÍ DỤ ============//
+
+  // font-size & line-height heading
+
+  --h2-fs: 6.8rem;
+  --h2-lh: 7rem;
+
+  --pj-fs: 5.2rem;
+  --pj-lh: 5.6rem;
+
+  --slogan-fs: 6.8rem;
+  --slogan-lh: 7rem;
+
+  --h3-fs: 2.6rem;
+  --h3-lh: 3rem;
+
+  --h5-fs: 2rem;
+  --h5-lh: 3rem;
+
+  --body15-fs: 1.6rem;
+  --body15-lh: 2.6rem;
+
+  // Genaral Variable
+
+  --gap: 8rem; // gap này sử dụng cho gap cột & padding của container, container-fluid
+
+  --height-header: 8rem;
+  --ptop: 1.5rem;
+  --pd-section: 75px;
+
+  @media (max-width: $lg-max) {
+    --h2-fs: 5rem;
+    --h2-lh: 5.5rem;
+
+    --pj-fs: 4.2rem;
+    --pj-lh: 4.8rem;
+
+    --h3-fs: 2.2rem;
+    --h3-lh: 2.6rem;
+
+    --h5-fs: 1.5rem;
+    --h5-lh: 2rem;
+
+    --body15-fs: 1.5rem;
+    --body15-lh: 2.5rem;
+  }
+
+  @media (max-width: $md-max) {
+    --h2-fs: 5rem;
+    --h2-lh: 5.5rem;
+
+    --pj-fs: 4.2rem;
+    --pj-lh: 4.8rem;
+
+    --h3-fs: 2.2rem;
+    --h3-lh: 2.6rem;
+
+    --h5-fs: 1.5rem;
+    --h5-lh: 2rem;
+
+    --body15-fs: 1.5rem;
+    --body15-lh: 2.5rem;
+  }
+
+  @media (max-width: $sm-max) {
+    --h2-fs: 3rem;
+    --h2-lh: 3rem;
+
+    --pj-fs: 2.8rem;
+    --pj-lh: 3rem;
+
+    --slogan-fs: 5rem;
+    --slogan-lh: 6rem;
+
+    --h3-fs: 2rem;
+    --h3-lh: 2.4rem;
+
+    --h5-fs: 1.7rem;
+    --h5-lh: 2rem;
+
+    --body15-fs: 1.3rem;
+    --body15-lh: 2.2rem;
+  }
+
+  @media (max-width: $xs-max) {
+    // Mobile
+
+    --h2-fs: 2.4rem;
+    --h2-lh: 3rem;
+
+    --pj-fs: 2rem;
+    --pj-lh: 3rem;
+
+    --slogan-fs: 2.6rem;
+    --slogan-lh: 3rem;
+
+    --h3-fs: 1.5rem;
+    --h3-lh: 2rem;
+
+    --h5-fs: 1.5rem;
+    --h5-lh: 2rem;
+
+    --gap: 20px;
+
+    --height-header: 70px;
+    --pd-section: 50px;
+    --ptop: 120px;
+  }
+}

@@ -1,0 +1,96 @@
+@import "../../styles/core/variables";
+
+#contact {
+  .contact {
+    padding: 20rem 0;
+    .typo--overline {
+      margin-bottom: 7.4rem;
+      color: #b6ada5;
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 6.4rem;
+      line-height: 7.2rem;
+    }
+
+    &-top {
+      margin-bottom: 12rem;
+
+      &__map {
+        position: relative;
+        padding-left: var(--gap);
+
+        &-pointer {
+          position: absolute;
+          top: 16.1rem;
+          right: 7.6rem;
+          width: 2.2rem;
+          height: 2.2rem;
+          background-color: #c79358;
+          border-radius: 50%;
+          border: 0.2rem solid #ffffff;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+      }
+
+      &__list {
+        margin-top: 2.4rem;
+        .list {
+          &__item {
+            margin-bottom: 6rem;
+
+            .item__index {
+              font-weight: 500;
+              font-size: 3.2rem;
+              line-height: 4.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    &-bottom {
+      &__input-list {
+        padding-left: var(--gap);
+      }
+
+      &__input-item {
+        font-weight: 400;
+        font-size: 6.4rem;
+        line-height: 8.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .submit-btn {
+        display: flex;
+        gap: 1.6rem;
+        padding-left: var(--gap);
+        p {
+          font-weight: 600;
+          text-transform: capitalize !important;
+        }
+      }
+
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $gray2-cl;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $gray2-cl;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: $gray2-cl;
+      }
+
+      .submit-btn {
+        margin-top: 16.4rem;
+      }
+    }
+  }
+}

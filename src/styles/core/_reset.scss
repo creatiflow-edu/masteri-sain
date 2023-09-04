@@ -1,0 +1,10 @@
+@import "_mixins.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  @include reset-input;
+}
