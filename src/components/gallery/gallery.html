@@ -1,105 +1,172 @@
 <div id="gallery" class="js-gallery">
   <div class="gallery-heading hover" data-outline="#fff">
-    <p class="heading__item heading__item--active">Superior Apartment 3BR</p>
+    <p class="heading__item">Superior Apartment 3BR</p>
     <p class="heading__item">Deluxe Apartment 2BR</p>
     <p class="heading__item">Top Apartment 1BR</p>
-    <div class="heading__progress-bar"></div>
+    <div class="heading__progress-bar" id="line"></div>
   </div>
   <div class="gallery-slider">
-    <img class="slider-item__img" src="/assets/img/img-3.jpg" alt="" />
+    <div class="gallery-slider-item">
+      <img
+        class="gallery-slider-item__img"
+        src="/assets/img/img-3.jpg"
+        alt=""
+      />
+      <div class="grid grid-cols-24 h-[100%] gallery-slider-item__content">
+        <div class="box__head col-start-2 col-span-6">
+          <p class="typo--overline color--white">Gallery</p>
+          <h2 class="gallery-slider-item__title fnt-freight color--white">
+            Selected Images
+          </h2>
+        </div>
 
-    <div class="slider-item__content container">
-      <div
-        class="js-slider_item slider_item hover h-[100%]"
-        data-content="Discover Gallery"
-        data-bgcolor="#ffffff1a"
-        data-color="#fff"
-        data-size="319px"
-      >
-        <div class="grid grid-cols-22 h-[100%]">
-          <div class="box__head col-span-6">
-            <p class="typo--overline color--white">Gallery</p>
-            <h2 class="fnt-freight color--white">Selected Images</h2>
-          </div>
-
-          <div class="box__detail col-start-9 col-span-5">
-            <div class="detail__text">
-              <p class="typo--title color--white">
-                Superior Apartment 3 BR / Kitchen View
-              </p>
-              <div class="slider-pages typo--label">
-                <p class="pages pages--current">01</p>
-                <p class="pages pages--total">/120</p>
-              </div>
-              <p class="detail__desc color--white">
-                The spectacular 15 into 13 room corner residence is perfectly
-                positioned on Fifth Avenue to enjoy the absolutely dazzling
-                views of Central Park
-              </p>
+        <div class="box__detail col-start-10 col-span-5">
+          <div class="detail__text">
+            <p class="gallery-slider-item__subTitle typo--title color--white">
+              Superior Apartment 3 BR / Kitchen View
+            </p>
+            <div class="slider-pages typo--label">
+              <p class="pages pages--current">01</p>
+              <p class="pages pages--total">/120</p>
             </div>
-            <div class="detail__nav-buttons">
-              <button class="btn btn-prev color--white">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22.75 12H2.75"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="square"
-                    stroke-linejoin="bevel"
-                  />
-                  <path
-                    d="M9 5L2 12L9 19"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="square"
-                    stroke-linejoin="bevel"
-                  />
-                </svg>
-                <p>Prev</p>
-              </button>
-              <button class="btn btn-next color--white">
-                <p>Next</p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.25 12H21.25"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="square"
-                    stroke-linejoin="bevel"
-                  />
-                  <path
-                    d="M15 5L22 12L15 19"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="square"
-                    stroke-linejoin="bevel"
-                  />
-                </svg>
-              </button>
-            </div>
+            <p class="gallery-slider-item__content detail__desc color--white">
+              The spectacular 15 into 13 room corner residence is perfectly
+              positioned on Fifth Avenue to enjoy the absolutely dazzling views
+              of Central Park
+            </p>
           </div>
         </div>
       </div>
-      <div class="call-to-action-button gallery__call-to-action-button">
-        <div class="circle"></div>
-        <p class="button-text typo--button color--white">Discover gallery</p>
+    </div>
+    <div class="gallery-slider-item">
+      <img
+        class="gallery-slider-item__img"
+        src="/assets/img/img-3.jpg"
+        alt=""
+      />
+      <div class="grid grid-cols-24 h-[100%] gallery-slider-item__content">
+        <div class="box__head col-start-2 col-span-6">
+          <p class="typo--overline color--white">Gallery</p>
+          <h2 class="gallery-slider-item__title fnt-freight color--white">
+            Beautiful designs
+          </h2>
+        </div>
+
+        <div class="box__detail col-start-10 col-span-5">
+          <div class="detail__text">
+            <p class="gallery-slider-item__subTitle typo--title color--white">
+              Superior Apartment 3 BR / Kitchen View
+            </p>
+            <div class="slider-pages typo--label">
+              <p class="pages pages--current">01</p>
+              <p class="pages pages--total">/120</p>
+            </div>
+            <p class="gallery-slider-item__content detail__desc color--white">
+              The spectacular 15 into 13 room corner residence is perfectly
+              positioned on Fifth Avenue to enjoy the absolutely dazzling views
+              of Central Park
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="gallery-slider-item">
+      <img
+        class="gallery-slider-item__img"
+        src="/assets/img/img-3.jpg"
+        alt=""
+      />
+      <div class="grid grid-cols-24 h-[100%] gallery-slider-item__content">
+        <div class="box__head col-start-2 col-span-6">
+          <p class="typo--overline color--white">Gallery</p>
+          <h2 class="gallery-slider-item__title fnt-freight color--white">
+            Stunning interior
+          </h2>
+        </div>
+
+        <div class="box__detail col-start-10 col-span-5">
+          <div class="detail__text">
+            <p class="gallery-slider-item__subTitle typo--title color--white">
+              Superior Apartment 3 BR / Kitchen View
+            </p>
+            <div class="slider-pages typo--label">
+              <p class="pages pages--current">01</p>
+              <p class="pages pages--total">/120</p>
+            </div>
+            <p class="gallery-slider-item__content detail__desc color--white">
+              The spectacular 15 into 13 room corner residence is perfectly
+              positioned on Fifth Avenue to enjoy the absolutely dazzling views
+              of Central Park
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-24 h-[100%]">
+      <div class="nav-buttons z-10 col-start-10 col-span-5">
+        <button class="btn btn-prev color--white">
+          <svg
+            class="arrow arrow-left"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22.75 12H2.75"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="square"
+              stroke-linejoin="bevel"
+            />
+            <path
+              d="M9 5L2 12L9 19"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="square"
+              stroke-linejoin="bevel"
+            />
+          </svg>
+          <p>Prev</p>
+        </button>
+        <button class="btn btn-next color--white">
+          <p>Next</p>
+          <svg
+            class="arrow arrow-right"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.25 12H21.25"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="square"
+              stroke-linejoin="bevel"
+            />
+            <path
+              d="M15 5L22 12L15 19"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="square"
+              stroke-linejoin="bevel"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="call-to-action-button">
+    <div class="circle"></div>
+    <p class="button-text typo--button color--white">Discover gallery</p>
   </div>
 </div>

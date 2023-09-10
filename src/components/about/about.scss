@@ -17,17 +17,10 @@
   // width: 100vw;
   // height: 100vh;
 
-  .part {
-    display: flex;
-    .section {
-      width: 100vw;
-      height: 100vh;
-      position: relative;
-      // overflow: hidden;
-    }
-  }
+  
 
   .slider-item {
+    display: flex;
     &__img {
       width: 100vw;
       height: 100vh;
@@ -36,6 +29,13 @@
       top: 0;
       z-index: -1;
       left: 0;
+    }
+
+    .section {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      // overflow: hidden;
     }
 
   }

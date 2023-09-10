@@ -1,19 +1,23 @@
 import { gsap } from "gsap";
 
 export class ProcessingBar {
-  constructor({ el }) {
-    this.DOM = { el };
+  DOM: HTMLDivElement;
+  progressNumber: number;
+  constructor(el: HTMLDivElement) {
+    this.DOM = el;
     this.progressNumber = 0;
+    console.log(this.DOM);
   }
 
   update() {
     if (this.progressNumber === 100) {
-      gsap.to(this.DOM.el, {
+      gsap.to(this.DOM, {
         ease: "power3.in",
-        xPercent: 105,
-        duration: 0.001,
+        xPercent: 100,
+        duration: 0,
         onComplete: () => {
-          gsap.to(this.DOM.el, {
+          gsap.to(this.DOM, {
+            ease: "power3.in",
             opacity: 0,
             onComplete: () => {
               this.reset();
@@ -23,16 +27,16 @@ export class ProcessingBar {
       });
     } else {
       this.progressNumber += 1;
-      line.style.width = this.progressNumber + "%";
+      this.DOM.style.width = this.progressNumber + "%";
     }
   }
 
   reset() {
-    gsap.set(this.DOM.el, {
+    gsap.set(this.DOM, {
       ease: "power3.out",
       xPercent: 0,
       opacity: 1,
-      delay: 2.5,
+      delay: 0,
       onComplete: () => {
         this.progressNumber = -1;
       },

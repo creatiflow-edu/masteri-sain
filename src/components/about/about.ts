@@ -69,8 +69,8 @@ export class About {
   create() {
     const main = document.getElementById("js-about") as HTMLDivElement;
 
-    const part = document.createElement("part") as HTMLDivElement;
-    part.classList.add("part", "slider-item", "hover");
+    const part = document.createElement("div") as HTMLDivElement;
+    part.classList.add("slider-item", "hover");
     const slide = new SliderItem(
       this.images[this.current],
       this.titles[this.current],
@@ -174,7 +174,7 @@ export class About {
   }
 
   autoplay() {
-    const autoplayInterval = 1000;
+    const autoplayInterval = 7000;
 
     const autoplayTimeline = gsap
       .timeline({ repeat: -1, paused: true })

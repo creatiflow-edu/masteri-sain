@@ -2,7 +2,8 @@ import "./styles/styles.scss";
 import { Grid } from "./components/grid/grid";
 
 import { Cursor } from "./components/cursor/cursor";
-import { About, _ABOUT_ } from "./components/about/about";
+import { _ABOUT_ } from "./components/about/about";
+import { Gallery } from "./components/gallery/gallery";
 // import { Carousel } from "./components/animate/carousel";
 // import { Gallery } from "./components/gallery/gallery";
 // import { Slideshow } from "./components/animate/carousel";
@@ -14,11 +15,10 @@ const cursor = new Cursor();
 cursor.mouseMove();
 cursor.parallax();
 
+_ABOUT_
 // const about = new About();
 // about.staggerTextAnimate();
 // about.revealTextAnimate();
 
-// const gallery = new Gallery();
+const gallery = new Gallery();
 // const carousel = new Carousel();
-
-console.log(_ABOUT_)
